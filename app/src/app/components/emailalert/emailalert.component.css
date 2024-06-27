@@ -1,0 +1,19 @@
+
+.email-alert-container{
+    margin-top: 15%;
+    margin-left: 30%;
+    width: 40%;
+    border-radius: 4px;
+}
+
+.email-alert{
+    margin-top: 2%;
+    color : #0F0E0E;
+    text-align: center;
+}
+
+.check-email{
+    text-align: center;
+    font-size: 14px;
+    color : red;
+}
