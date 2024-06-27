@@ -1,0 +1,124 @@
+.form {
+    width: 100%;
+  }
+  
+.email-field{
+    width: 100%;
+    margin-top: 2%;
+}
+
+.password-field{
+    width: 100%;
+}
+input {
+    height: 50px;
+}
+  
+.login-container{
+display: flex;
+margin: 2%;
+height: 500px;
+}
+
+.left-login-container{
+width: 50%;
+}
+
+.right-login-container{
+width: 50%;
+}
+
+.inner-right-login-container{
+margin: 10%;
+height: auto;
+}
+
+.code-file-soln{
+margin-left: 20%;
+font-size: 14px;
+color : #0F0E0E;
+}
+
+.form-div{
+margin-top: 2%;
+height: auto;
+}
+
+mat-error{
+    color: red;
+}
+
+.login-submit{
+margin-top: 3%;
+height: 55px;
+width: 100%;
+border-radius: 4px;
+border: 1px solid #aa182c;
+background-color: #aa182c;
+}
+  
+.login-submit strong{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.link-div{
+display: flex;
+}
+.forgot-password-link{
+    text-decoration: none;
+    color: #aa182c;
+    margin-top: 2%;
+    cursor: pointer;
+    margin-left: 25%;
+}
+
+.link-div-left{
+width: 50%;
+height: 40px;
+display:flex;
+}
+
+.link-div-right{
+text-align: right;
+}
+.remember-me{
+margin-left: 5%;
+margin-top: 5%;
+color: #A1A1A1;
+
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #aa182c; 
+    border-color: #aa182c;
+  }
+  
+  .custom-checkbox:checked::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 29%, 78% 19%, 45% 62%);
+  }
+  
+  mat-form-field{
+    margin-top: 2%;
+  }

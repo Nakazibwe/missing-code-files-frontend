@@ -1,0 +1,75 @@
+<div class="login-container">
+  <div class="left-login-container"></div>
+  <div class="right-login-container">
+    <div class="inner-right-login-container">
+      <h4 [style.color]="'#0F0E0E'">Login to your account</h4>
+      <p class="code-file-soln">Code file solution</p>
+      <div class="form-div">
+        <form class="form">
+          <mat-form-field class="email-field">
+            <mat-label>Email</mat-label>
+            <input
+              type="email"
+              matInput
+              [formControl]="emailFormControl"
+              [errorStateMatcher]="matcher"
+              placeholder="Enter email"
+              required
+            />
+            @if (emailFormControl.hasError('email') &&
+            !emailFormControl.hasError('required')) {
+            <mat-error
+              ><small>Please enter a valid email address</small></mat-error
+            >
+            } @if (emailFormControl.hasError('required')) {
+            <mat-error
+              ><small>Email <strong> required</strong></small></mat-error
+            >
+            } </mat-form-field
+          ><br />
+
+          <mat-form-field class="password-field">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              [type]="hide ? 'password' : 'text'"
+              [formControl]="passwordFormControl"
+              placeholder="Enter password"
+              required
+            />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+            >
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            @if (passwordFormControl.hasError('required')) {
+            <mat-error
+              ><small>Password <strong> required</strong></small></mat-error
+            >
+            } </mat-form-field
+          ><br />
+
+          <div class="link-div">
+            <div class="link-div-left">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                [formControl]="rememberMeFormControl"
+                class="form-control"
+              />
+              <small class="remember-me">Remember me</small>
+            </div>
+
+            <a routerLink="" class="forgot-password-link"><small>Forgot password?</small></a>
+          </div>
+
+          <button class="login-submit"><strong>Login</strong></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
