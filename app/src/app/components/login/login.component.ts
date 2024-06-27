@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, signal } from '@angular/core';
+import { Component, ChangeDetectionStrategy, } from '@angular/core';
 import {
   FormControl,
   FormGroupDirective,
@@ -37,7 +37,6 @@ export class LoginComponent {
 
   passwordFormControl = new FormControl('', [
     Validators.required,
-    Validators.minLength(8)
   ]);
 
   rememberMeFormControl = new FormControl(false)
