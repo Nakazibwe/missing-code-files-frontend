@@ -1,0 +1,35 @@
+.verify-container{
+margin-top: 10%;
+margin-left: 30%;
+height: 250px;
+width: 40%;
+}
+
+.code-to-email{
+    text-align: center;
+    font-size: 14px;
+    color : #0F0E0E;
+}
+.verify-otp{
+    color : #0F0E0E;
+    text-align: center;
+}
+.verify-submit{
+    margin-top: 3%;
+    height: 55px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #aa182c;
+    background-color: #aa182c;
+}
+
+.verify-submit strong{
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.otp-field{
+    width: 100%;
+    margin-top: 2%;
+
+}
